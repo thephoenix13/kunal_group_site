@@ -22,12 +22,6 @@ export default function Footer() {
               India's trusted manpower solutions provider. Delivering skilled, semi-skilled, and unskilled workforce across manufacturing and industrial sectors for over two decades.
             </p>
             <div className="flex gap-3">
-              <a href="#" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-white/70 hover:bg-orange hover:text-white transition-all duration-200" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in text-sm"></i>
-              </a>
-              <a href="#" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-white/70 hover:bg-orange hover:text-white transition-all duration-200" aria-label="Facebook">
-                <i className="fab fa-facebook-f text-sm"></i>
-              </a>
               <a href="https://wa.me/919623427777" className="w-9 h-9 bg-white/10 rounded-lg flex items-center justify-center text-white/70 hover:bg-green-500 hover:text-white transition-all duration-200" aria-label="WhatsApp">
                 <i className="fab fa-whatsapp text-sm"></i>
               </a>
