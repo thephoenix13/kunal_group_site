@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy: #0A2540;
+  --color-navy-light: #1a3a5c;
+  --color-navy-dark: #061a2e;
+  --color-orange: #FF6B35;
+  --color-orange-dark: #e55a28;
+  --color-orange-light: #ff8a5c;
+  --color-light-bg: #F8F9FA;
+  --color-light-grey: #E9ECEF;
+  --font-heading: 'Rubik', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #0A2540;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B35;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+  50% { box-shadow: 0 0 0 12px rgba(37, 211, 102, 0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.6s ease-out forwards;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+/* Service card hover */
+.service-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(10, 37, 64, 0.12);
+}
+
+/* Corporate geometric patterns */
+.corporate-pattern {
+  background-image: 
+    linear-gradient(30deg, rgba(10, 37, 64, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(10, 37, 64, 0.02) 87.5%, rgba(10, 37, 64, 0.02)),
+    linear-gradient(150deg, rgba(10, 37, 64, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(10, 37, 64, 0.02) 87.5%, rgba(10, 37, 64, 0.02)),
+    linear-gradient(30deg, rgba(10, 37, 64, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(10, 37, 64, 0.02) 87.5%, rgba(10, 37, 64, 0.02)),
+    linear-gradient(150deg, rgba(10, 37, 64, 0.02) 12%, transparent 12.5%, transparent 87%, rgba(10, 37, 64, 0.02) 87.5%, rgba(10, 37, 64, 0.02));
+  background-size: 80px 140px;
+  background-position: 0 0, 0 0, 40px 70px, 40px 70px;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(255, 107, 53, 0.15);
+  color: #0A2540;
+}
+
+/* Focus styles */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid #FF6B35;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Image loading */
+img {
+  transition: opacity 0.3s ease;
+}
+
+/* Print styles */
+@media print {
+  header, footer, .whatsapp-btn {
+    display: none !important;
+  }
+}
