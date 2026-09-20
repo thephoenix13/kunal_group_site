@@ -48,8 +48,6 @@ export default function Header() {
               <i className="fas fa-envelope text-[10px] mr-1"></i>hr@kunalgroup.net
             </a>
             <div className="flex items-center gap-2 ml-3 border-l border-white/20 pl-4">
-              <a href="#" className="hover:text-orange transition-colors"><i className="fab fa-linkedin-in"></i></a>
-              <a href="#" className="hover:text-orange transition-colors"><i className="fab fa-facebook-f"></i></a>
               <a href="https://wa.me/919623427777" className="hover:text-orange transition-colors"><i className="fab fa-whatsapp"></i></a>
             </div>
           </div>

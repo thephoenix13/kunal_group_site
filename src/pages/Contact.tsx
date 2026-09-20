@@ -185,12 +185,6 @@ export default function Contact() {
               <div className="mt-10 pt-8 border-t border-light-grey">
                 <p className="text-xs text-navy/50 uppercase tracking-wider font-semibold mb-4">Connect With Us</p>
                 <div className="flex gap-3">
-                  <a href="#" className="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center text-navy hover:bg-orange hover:text-white transition-all duration-200" aria-label="LinkedIn">
-                    <i className="fab fa-linkedin-in"></i>
-                  </a>
-                  <a href="#" className="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center text-navy hover:bg-orange hover:text-white transition-all duration-200" aria-label="Facebook">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
                   <a href="https://wa.me/919623427777" className="w-10 h-10 bg-navy/5 rounded-lg flex items-center justify-center text-navy hover:bg-green-500 hover:text-white transition-all duration-200" aria-label="WhatsApp">
                     <i className="fab fa-whatsapp"></i>
                   </a>
